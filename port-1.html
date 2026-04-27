@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Português - 8º Ano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .btn-resolve {
+            background-color: #c0392b;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .btn-resolve:hover {
+            background-color: #a93226;
+        }
+        .resolution {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fdedec;
+            border-left: 5px solid #c0392b;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercícios de Português - Revisão do 1º Trimestre</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. Com base na crônica "A outra noite", de Rubem Braga, qual é a principal reflexão proposta pelo cronista?</div>
+        <ul class="options">
+            <li>a) O trânsito de São Paulo é o maior responsável pelo cansaço das pessoas.</li>
+            <li>b) A realidade pode ser percebida de diferentes formas, dependendo do ponto de vista, revelando beleza mesmo em uma noite chuvosa.</li>
+            <li>c) O trabalho dos motoristas de táxi é desvalorizado nas grandes cidades.</li>
+            <li>d) A natureza não possui conexão com as emoções humanas durante os dias de tempestade.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res1')">Mostrar Resolução</button>
+        <div id="res1" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            O cronista propõe a reflexão de que a realidade muda conforme o ponto de vista: as nuvens feias vistas de baixo por eles na chuva eram, vistas de cima pelo amigo, enluaradas e bonitas.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. Leia o trecho da crônica: <em>"Outro dia fui a São Paulo e resolvi voltar à noite (...)"</em>. Qual é o tipo de narrador presente no texto?</div>
+        <ul class="options">
+            <li>a) Narrador-observador (3ª pessoa).</li>
+            <li>b) Narrador-onisciente, que sabe tudo sobre o passado e futuro.</li>
+            <li>c) Narrador em 2ª pessoa, focando no leitor.</li>
+            <li>d) Narrador em 1ª pessoa (narrador-personagem).</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res2')">Mostrar Resolução</button>
+        <div id="res2" class="resolution">
+            <strong>Alternativa correta: d) Narrador em 1ª pessoa.</strong><br>
+            A crônica é narrada em 1ª pessoa por um narrador-personagem, pois ele participa ativamente dos fatos relatados, o que é comprovado por formas verbais como "fui", "resolvi" e "encontrei".
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. Observe a oração: <em>"dizem por aí que..."</em>. Qual é a correta classificação do sujeito do verbo "dizem"?</div>
+        <ul class="options">
+            <li>a) Sujeito simples.</li>
+            <li>b) Sujeito indeterminado.</li>
+            <li>c) Sujeito desinencial (oculto).</li>
+            <li>d) Sujeito inexistente.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res3')">Mostrar Resolução</button>
+        <div id="res3" class="resolution">
+            <strong>Alternativa correta: b) Sujeito indeterminado.</strong><br>
+            O sujeito é indeterminado, pois o verbo está na 3ª pessoa do plural ("eles" implícito) e não há referente claro no contexto que identifique quem pratica a ação.
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. Analise a oração: <em>"havia um luar lindo e cheio"</em>. Sobre ela, é correto afirmar que:</div>
+        <ul class="options">
+            <li>a) O sujeito é "um luar lindo e cheio".</li>
+            <li>b) O sujeito é indeterminado pelo índice de indeterminação.</li>
+            <li>c) Trata-se de uma oração sem sujeito (sujeito inexistente).</li>
+            <li>d) O sujeito é desinencial e oculto.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res4')">Mostrar Resolução</button>
+        <div id="res4" class="resolution">
+            <strong>Alternativa correta: c) Trata-se de uma oração sem sujeito.</strong><br>
+            O verbo "haver" utilizado no sentido de "existir" é um verbo impessoal. Ele não admite sujeito e deve permanecer sempre na 3ª pessoa do singular.
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. Considere a oração: <em>"Uma noite era realmente preta e enlamada e torpe"</em>. Identifique a predicação verbal de "era" e a classificação do predicado.</div>
+        <ul class="options">
+            <li>a) Verbo Transitivo Direto / Predicado Verbal.</li>
+            <li>b) Verbo Intransitivo / Predicado Verbo-Nominal.</li>
+            <li>c) Verbo de Ligação / Predicado Nominal.</li>
+            <li>d) Verbo Transitivo Indireto / Predicado Verbal.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res5')">Mostrar Resolução</button>
+        <div id="res5" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            O verbo "era" (verbo ser) funciona como Verbo de Ligação, ligando o sujeito "Uma noite" às suas características ou estados ("preta e enlamada e torpe", que são o predicativo do sujeito). Portanto, o predicado é nominal.
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. Analise as orações (I) <em>"Consertam-se relógios"</em> e (II) <em>"Necessita-se de funcionários"</em>. Assinale a alternativa que indica a função da partícula "SE" em cada uma, respectivamente:</div>
+        <ul class="options">
+            <li>a) (I) Pronome reflexivo; (II) Índice de indeterminação do sujeito.</li>
+            <li>b) (I) Partícula apassivadora; (II) Partícula apassivadora.</li>
+            <li>c) (I) Índice de indeterminação do sujeito; (II) Partícula apassivadora.</li>
+            <li>d) (I) Partícula apassivadora; (II) Índice de indeterminação do sujeito.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res6')">Mostrar Resolução</button>
+        <div id="res6" class="resolution">
+            <strong>Alternativa correta: d).</strong><br>
+            Na oração (I), "consertam" é um Verbo Transitivo Direto, logo o "se" é partícula apassivadora (relógios são consertados - sujeito paciente). Em (II), "necessita" é um Verbo Transitivo Indireto exigindo preposição, logo o "se" é índice de indeterminação do sujeito.
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. Como se classifica o conceito de "Oração" na sintaxe da língua portuguesa?</div>
+        <ul class="options">
+            <li>a) Toda palavra ou conjunto de palavras com sentido completo, independentemente de ter verbo.</li>
+            <li>b) Unidade sintática formada obrigatoriamente em torno de um verbo ou locução verbal.</li>
+            <li>c) Conjunto de três ou mais verbos conectados por uma preposição.</li>
+            <li>d) Somente as frases que possuem sentido incompleto e sem verbos.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res7')">Mostrar Resolução</button>
+        <div id="res7" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            Enquanto a "frase" pode não ter verbos (frase nominal), a "Oração" é a unidade sintática que se estrutura necessariamente em torno do verbo.
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. De acordo com as regras do verbo "SER" na indicação de quantidades acompanhado de adjuntos adverbiais de intensidade (muito, pouco), qual é a forma correta?</div>
+        <ul class="options">
+            <li>a) Cem reais <strong>são muito</strong> por este livro.</li>
+            <li>b) Dois litros de água <strong>são pouco</strong> para a receita.</li>
+            <li>c) Cem reais <strong>é muito</strong> por este livro.</li>
+            <li>d) Dez quilos <strong>serão suficientes</strong>.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res8')">Mostrar Resolução</button>
+        <div id="res8" class="resolution">
+            <strong>Alternativa correta: c) Cem reais é muito por este livro.</strong><br>
+            A regra dita que na indicação de preço, peso e medida, quando acompanhado de adjuntos adverbiais de intensidade ("pouco", "muito", "suficiente"), o verbo "SER" deve ser flexionado <strong>sempre no singular</strong>, mesmo que o numeral seja plural.
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. A oração: <em>"o chofer aproveitou um sinal fechado"</em> transposta para a <strong>voz passiva sintética</strong> deve ser escrita como:</div>
+        <ul class="options">
+            <li>a) Um sinal fechado foi aproveitado pelo chofer.</li>
+            <li>b) Aproveitaram um sinal fechado.</li>
+            <li>c) O chofer se aproveitou de um sinal.</li>
+            <li>d) Aproveitou-se um sinal fechado.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res9')">Mostrar Resolução</button>
+        <div id="res9" class="resolution">
+            <strong>Alternativa correta: d) Aproveitou-se um sinal fechado.</strong><br>
+            A voz passiva sintética é construída com o verbo transitivo direto na 3ª pessoa ("aproveitou") acompanhado do pronome apassivador "se". A alternativa "a" corresponde à voz passiva analítica.
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. Qual das alternativas abaixo apresenta ERRO de concordância verbal em relação à regra dos verbos impessoais?</div>
+        <ul class="options">
+            <li>a) Havia muitos interessados na feira de ciências.</li>
+            <li>b) Fazem seis meses que as escolas estão fechadas.</li>
+            <li>c) Houve poucas faltas na primeira prova.</li>
+            <li>d) Choveu muito em Brasília na última semana.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res10')">Mostrar Resolução</button>
+        <div id="res10" class="resolution">
+            <strong>Alternativa correta: b) Fazem seis meses...</strong><br>
+            O verbo "fazer" quando indica tempo decorrido é impessoal, ou seja, não possui sujeito e deve permanecer invariável na 3ª pessoa do singular. O correto seria: "<strong>Faz</strong> seis meses que as escolas estão fechadas".
+        </div>
+    </div>
+
+    <script>
+        function toggleResolution(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
