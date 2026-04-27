@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de História - 8º Ano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .btn-resolve {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .btn-resolve:hover {
+            background-color: #d35400;
+        }
+        .resolution {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fdf2e9;
+            border-left: 5px solid #e67e22;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercícios de História - Revisão 1º Trimestre</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. O que determinavam os "Atos de Navegação" (1651) criados na Inglaterra durante o período da República de Oliver Cromwell?</div>
+        <ul class="options">
+            <li>a) Que a religião oficial da Inglaterra seria obrigatoriamente o puritanismo.</li>
+            <li>b) Que todas as mercadorias que entrassem ou saíssem pelos portos da Grã-Bretanha só podiam ser transportadas em navios ingleses ou dos países produtores.</li>
+            <li>c) A execução do rei Carlos I e a instauração imediata do absolutismo.</li>
+            <li>d) A dissolução da marinha mercante e a dependência do comércio feito por navios holandeses.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res1')">Mostrar Resolução</button>
+        <div id="res1" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            Essas leis determinaram a exclusividade no transporte marítimo para navios ingleses ou dos próprios produtores, o que favoreceu a acumulação de capitais pela burguesia britânica e enfraqueceu os comerciantes holandeses, levando à Guerra Anglo-holandesa.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. A Revolução Gloriosa (1688) resultou no fim do absolutismo na Inglaterra. Qual documento o príncipe Guilherme de Orange teve que acatar para assumir o poder?</div>
+        <ul class="options">
+            <li>a) Declaração dos Direitos do Homem e do Cidadão.</li>
+            <li>b) A Constituição dos Estados Unidos.</li>
+            <li>c) Bill of Rights (Declaração dos Direitos).</li>
+            <li>d) Tratado de Paris.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res2')">Mostrar Resolução</button>
+        <div id="res2" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            Ao assumir o trono, Guilherme de Orange acatou a Bill of Rights (Declaração dos Direitos), que estabelecia a superioridade da lei sobre a vontade do rei, implantando uma Monarquia Parlamentar onde "O rei reina, mas não governa".
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. Um dos grandes movimentos de trabalhadores durante a Revolução Industrial foi o Ludismo. Qual era a principal característica de protesto desse movimento?</div>
+        <ul class="options">
+            <li>a) Exigir do Parlamento o voto universal através da Carta do Povo.</li>
+            <li>b) Invadir fábricas para destruir as máquinas, pois os operários as culpavam pela queda dos salários e pela falta de emprego.</li>
+            <li>c) Negociar pacificamente aumentos salariais por meio da criação dos Sindicatos (Trade Unions).</li>
+            <li>d) Exigir a volta do artesanato e das corporações de ofício medievais.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res3')">Mostrar Resolução</button>
+        <div id="res3" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            Os luditas viam nas máquinas a causa de seus problemas, como a queda dos salários e desemprego, e por isso invadiam as fábricas para destruí-las, sendo duramente reprimidos pelo governo.
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. No contexto da exploração do trabalho operário durante a Revolução Industrial, o conceito de "Mais-valia" é usado para designar:</div>
+        <ul class="options">
+            <li>a) O lucro obtido pelo próprio artesão na venda de seu produto.</li>
+            <li>b) O aumento da produção decorrente da nova divisão social do trabalho.</li>
+            <li>c) A desigualdade entre o salário pago ao operário e o verdadeiro valor das riquezas que ele produziu com seu trabalho.</li>
+            <li>d) O aumento do tempo de lazer conquistado pelas lutas sindicais.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res4')">Mostrar Resolução</button>
+        <div id="res4" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            A Mais-valia é o termo usado para designar a desigualdade entre o salário pago ao trabalhador e o valor real do trabalho e da riqueza produzida por ele, que fica acumulada nas mãos do patrão.
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. O filósofo iluminista John Locke foi um grande crítico do absolutismo. Segundo a sua teoria, quais seriam os "direitos naturais" inerentes a todos os seres humanos?</div>
+        <ul class="options">
+            <li>a) Direito exclusivo à religião de Estado e ao absolutismo.</li>
+            <li>b) Direito à vida, à liberdade e à propriedade.</li>
+            <li>c) Direito à educação estatal gratuita e ao tabelamento de preços.</li>
+            <li>d) Direito divino dos reis e autoridade inquestionável do monarca.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res5')">Mostrar Resolução</button>
+        <div id="res5" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            John Locke argumentava que todos os indivíduos nascem com direitos naturais, que são o direito à vida, à liberdade e à propriedade, e que o governo deve existir para garantir esses direitos de forma limitada.
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. No processo que antecedeu a Independência dos EUA, a Inglaterra impôs leis opressivas aos colonos. Qual foi a lei que determinou que contratos, jornais e certidões deviam receber um selo comprado do governo inglês?</div>
+        <ul class="options">
+            <li>a) Lei do Chá.</li>
+            <li>b) Lei do Açúcar.</li>
+            <li>c) Lei do Selo (1765).</li>
+            <li>d) Lei dos Cercamentos.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res6')">Mostrar Resolução</button>
+        <div id="res6" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            A Lei do Selo de 1765 determinava que todo material impresso nas Treze Colônias devia conter um selo imperial, o que gerou protestos sob o lema "Sem representação não pode haver tributação".
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. A Constituição dos Estados Unidos, pronta em 1787, implantou a República. Entretanto, apesar de falar em "liberdade", o documento configurou uma "cidadania limitada", porque:</div>
+        <ul class="options">
+            <li>a) Libertou todos os escravizados, mas negou o direito de voto aos brancos pobres.</li>
+            <li>b) Ocultou o racismo, mas proibiu a existência de propriedades rurais familiares.</li>
+            <li>c) Garantiu o direito ao voto censitário, igualdade jurídica e fim da escravidão no primeiro artigo.</li>
+            <li>d) Manteve a escravidão, e tanto negros, indígenas e mulheres continuaram sem direitos políticos ou liberdade.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res7')">Mostrar Resolução</button>
+        <div id="res7" class="resolution">
+            <strong>Alternativa correta: d).</strong><br>
+            Apesar de proclamar que "Nós, o povo" instituímos o governo, a constituição americana manteve o sistema escravista com mais de meio milhão de negros escravizados e não concedeu direitos políticos para indígenas, negros libertos e mulheres.
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. A sociedade francesa pré-revolucionária era profundamente desigual e baseada em privilégios de nascimento. Quem fazia parte do 3º Estado, grupo que pagava a maior parte dos impostos?</div>
+        <ul class="options">
+            <li>a) O Alto Clero e o Baixo Clero.</li>
+            <li>b) A Nobreza Cortesã e a Nobreza de Toga.</li>
+            <li>c) O Povo (trabalhadores urbanos e camponeses) e a Burguesia.</li>
+            <li>d) Apenas o Rei e os Senhores Feudais.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res8')">Mostrar Resolução</button>
+        <div id="res8" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            O 3º estado englobava toda a população não-privilegiada, ou seja, trabalhadores rurais, trabalhadores urbanos (sans-culottes) e a burguesia, que sustentavam sozinhos o 1º e o 2º estados através dos impostos.
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. A Tomada da Bastilha (14 de julho de 1789) marcou o início da participação popular na Revolução Francesa. O que essa prisão representava na época?</div>
+        <ul class="options">
+            <li>a) O poder do Parlamento inglês sobre o monarca.</li>
+            <li>b) O autoritarismo, a arbitrariedade e o poder absoluto do rei, além de abrigar armas e prisioneiros.</li>
+            <li>c) A sede de ideias iluministas e o refúgio seguro dos jacobinos radicais.</li>
+            <li>d) A aliança militar entre a França e os colonos americanos.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res9')">Mostrar Resolução</button>
+        <div id="res9" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            A Queda da Bastilha teve grande efeito prático e simbólico: o povo indignado tomou a antiga fortaleza em busca de armas e pólvora, desafiando a arbitrariedade e o poder real ali representados.
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. Durante a Revolução Francesa, o período liderado por Maximilien Robespierre e os Jacobinos ficou conhecido pelas suas medidas radicais e condenações em massa à guilhotina. Qual o nome dessa fase?</div>
+        <ul class="options">
+            <li>a) Governo do Diretório.</li>
+            <li>b) Reação Termidoriana.</li>
+            <li>c) Monarquia Constitucional.</li>
+            <li>d) Período do Terror.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res10')">Mostrar Resolução</button>
+        <div id="res10" class="resolution">
+            <strong>Alternativa correta: d).</strong><br>
+            O "Período do Terror" ocorreu quando os Jacobinos liderados por Robespierre intensificaram a violência, executando e condenando sem direito de defesa na guilhotina quem fosse considerado inimigo da revolução.
+        </div>
+    </div>
+
+    <script>
+        function toggleResolution(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
