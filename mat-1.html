@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Matemática - 8º Ano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .btn-resolve {
+            background-color: #9b59b6;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .btn-resolve:hover {
+            background-color: #8e44ad;
+        }
+        .resolution {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f5eef8;
+            border-left: 5px solid #9b59b6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercícios de Matemática - 8º Ano</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. Calcule o valor da expressão (2³ . 2⁵) ÷ 2⁴:</div>
+        <ul class="options">
+            <li>a) 8</li>
+            <li>b) 16</li>
+            <li>c) 32</li>
+            <li>d) 64</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res1')">Mostrar Resolução</button>
+        <div id="res1" class="resolution">
+            <strong>Alternativa correta: b) 16.</strong><br>
+            Aplicando a propriedade da multiplicação de potências de mesma base: 2³ × 2⁵ = 2⁸. <br>
+            Em seguida, aplicando a propriedade da divisão: 2⁸ ÷ 2⁴ = 2⁴. <br>
+            O valor numérico é: 2⁴ = 2 × 2 × 2 × 2 = 16.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. Simplifique a expressão: [(3² . 3³)² ÷ 3⁴] . 3⁻³</div>
+        <ul class="options">
+            <li>a) 9</li>
+            <li>b) 27</li>
+            <li>c) 81</li>
+            <li>d) 3</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res2')">Mostrar Resolução</button>
+        <div id="res2" class="resolution">
+            <strong>Alternativa correta: b) 27.</strong><br>
+            Passo 1: Resolver o parêntese (3² × 3³ = 3⁵).<br>
+            Passo 2: Elevar ao quadrado (3⁵)² = 3¹⁰.<br>
+            Passo 3: Resolver o colchete 3¹⁰ ÷ 3⁴ = 3⁶.<br>
+            Passo 4: Multiplicar 3⁶ × 3⁻³ = 3³.<br>
+            Passo 5: Calcular 3³ = 27.
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. Calcule o valor da seguinte expressão envolvendo raízes: √144 + √225 - √64</div>
+        <ul class="options">
+            <li>a) 17</li>
+            <li>b) 19</li>
+            <li>c) 21</li>
+            <li>d) 25</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res3')">Mostrar Resolução</button>
+        <div id="res3" class="resolution">
+            <strong>Alternativa correta: b) 19.</strong><br>
+            Calculando cada raiz separadamente: √144 = 12 (pois 12² = 144); √225 = 15 (pois 15² = 225) e √64 = 8 (pois 8² = 64). <br>
+            Fazendo a operação: 12 + 15 - 8 = 19.
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. Qual é o menor número natural que deve ser multiplicado por 180 para que o produto seja um quadrado perfeito?</div>
+        <ul class="options">
+            <li>a) 2</li>
+            <li>b) 3</li>
+            <li>c) 5</li>
+            <li>d) 10</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res4')">Mostrar Resolução</button>
+        <div id="res4" class="resolution">
+            <strong>Alternativa correta: c) 5.</strong><br>
+            Fatorando 180 em números primos temos 180 = 2² . 3² . 5¹. <br>
+            Para ser um quadrado perfeito, todos os expoentes da fatoração devem ser pares. Como o 5 tem expoente 1 (ímpar), precisamos multiplicar por mais um 5.
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. Resolva a seguinte equação do 1º grau: 5x - 12 = 3x + 18</div>
+        <ul class="options">
+            <li>a) 12</li>
+            <li>b) 15</li>
+            <li>c) 18</li>
+            <li>d) 20</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res5')">Mostrar Resolução</button>
+        <div id="res5" class="resolution">
+            <strong>Alternativa correta: b) 15.</strong><br>
+            Passando os termos com x para a esquerda: 5x - 3x = 18 + 12.<br>
+            Simplificando: 2x = 30.<br>
+            Dividindo por 2: x = 30 ÷ 2 = 15.
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. A soma de um número com o seu triplo é igual a 52. Qual é esse número?</div>
+        <ul class="options">
+            <li>a) 13</li>
+            <li>b) 14</li>
+            <li>c) 26</li>
+            <li>d) 39</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res6')">Mostrar Resolução</button>
+        <div id="res6" class="resolution">
+            <strong>Alternativa correta: a) 13.</strong><br>
+            Seja x o número procurado. O triplo do número é 3x.<br>
+            Montando a equação: x + 3x = 52.<br>
+            Logo, 4x = 52. Dividindo, x = 52 ÷ 4 = 13.
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. Pedro tem o dobro da idade de Ana. Se a soma das idades de ambos é 42 anos, qual é a idade de Ana?</div>
+        <ul class="options">
+            <li>a) 12 anos</li>
+            <li>b) 14 anos</li>
+            <li>c) 21 anos</li>
+            <li>d) 28 anos</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res7')">Mostrar Resolução</button>
+        <div id="res7" class="resolution">
+            <strong>Alternativa correta: b) 14 anos.</strong><br>
+            Seja x a idade de Ana. A idade de Pedro será 2x.<br>
+            Soma das idades: x + 2x = 42.<br>
+            3x = 42 → x = 42 ÷ 3 = 14 anos. (A idade de Pedro seria 28 anos).
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. Sabendo que √x + √16 = 11, calcule o valor de x:</div>
+        <ul class="options">
+            <li>a) 7</li>
+            <li>b) 14</li>
+            <li>c) 49</li>
+            <li>d) 121</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res8')">Mostrar Resolução</button>
+        <div id="res8" class="resolution">
+            <strong>Alternativa correta: c) 49.</strong><br>
+            Sabemos que a raiz de 16 é 4 (√16 = 4).<br>
+            Substituindo na equação: √x + 4 = 11.<br>
+            Isolando a incógnita: √x = 11 - 4 → √x = 7.<br>
+            Para achar x, elevamos ambos os lados ao quadrado: (√x)² = 7² → x = 49.
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. Um terreno quadrado tem área de 576 m². Qual é a medida do lado desse terreno?</div>
+        <ul class="options">
+            <li>a) 22 m</li>
+            <li>b) 24 m</li>
+            <li>c) 26 m</li>
+            <li>d) 28 m</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res9')">Mostrar Resolução</button>
+        <div id="res9" class="resolution">
+            <strong>Alternativa correta: b) 24 m.</strong><br>
+            A área de um quadrado é calculada por A = lado².<br>
+            Logo, lado² = 576. A medida do lado será a raiz quadrada de 576: lado = √576.<br>
+            Como 24 × 24 = 576, a resposta é 24 m.
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. Na classificação de sistemas de equações lineares, qual das opções abaixo define corretamente um Sistema Possível Indeterminado (SPI)?</div>
+        <ul class="options">
+            <li>a) Possui uma única solução e suas retas são concorrentes.</li>
+            <li>b) Não admite nenhuma solução e suas retas são paralelas.</li>
+            <li>c) Possui infinitas soluções, pois as equações são equivalentes e representam retas coincidentes.</li>
+            <li>d) Admite exatamente duas soluções e suas retas se tocam em dois pontos distintos.</li>
+        </ul>
+        <button class="btn-resolve" onclick="toggleResolution('res10')">Mostrar Resolução</button>
+        <div id="res10" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            Um Sistema Possível Indeterminado (SPI) ocorre quando o sistema possui infinitas soluções. Matematicamente, isso significa que as equações são equivalentes, ou seja, as retas que as representam são coincidentes (são a mesma reta no plano cartesiano).
+        </div>
+    </div>
+
+    <script>
+        function toggleResolution(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
