@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado 02 - Geografia (Globalização e Geopolítica)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f7;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #27ae60;
+            margin-bottom: 30px;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #2ecc71;
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radio-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .radio-label:hover {
+            background-color: #f9f9f9;
+        }
+        .radio-label input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .resolution {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #eafaf1;
+            border-left: 5px solid #27ae60;
+            border-radius: 4px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simulado 02: Revisão de Geografia - 8º Ano</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. Qual é a principal diferença entre os conceitos de "Povo" e "População", de acordo com a geografia política?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> a) Povo refere-se apenas aos habitantes urbanos, enquanto População inclui os habitantes rurais.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> b) Povo é um conceito estritamente numérico, enquanto População é o conjunto de nascidos no país.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> c) Povo engloba indivíduos ligados ao Estado pelo vínculo da nacionalidade (natos e naturalizados), enquanto População é um dado numérico que abrange todos os residentes, incluindo estrangeiros e apátridas.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> d) Não há diferença, ambos representam o número exato de habitantes registrados em um território.</label>
+        </div>
+        <div id="res1" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            O conceito de Povo refere-se ao conjunto de indivíduos ligados a um Estado pelo vínculo da nacionalidade (natos e naturalizados), sujeitos às mesmas leis. Já a População é um conceito numérico e demográfico mais amplo, que inclui os nacionais e também os estrangeiros e apátridas que habitam o território.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. A respeito do Índice de Desenvolvimento Humano (IDH), quais são as três dimensões básicas analisadas para realizar o seu cálculo?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> a) Renda (PIB per capita), Educação (anos de estudo) e Saúde (expectativa de vida).</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> b) Industrialização, Taxa de Natalidade e Expectativa de vida.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> c) Renda Básica, Saneamento Ambiental e Mortalidade Infantil.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> d) Escolaridade Superior, Pobreza Absoluta e Expectativa de vida.</label>
+        </div>
+        <div id="res2" class="resolution">
+            <strong>Alternativa correta: a).</strong><br>
+            O desenvolvimento de um país não é medido apenas pelo crescimento da economia ou pelo PIB. O IDH utiliza a Renda (PIB per capita), a Educação (anos de estudo) e a Saúde (expectativa de vida) para mensurar a qualidade de vida da população.
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. O processo em que a dinâmica demográfica mundial passa de um crescimento populacional acelerado para um crescimento lento, promovendo o envelhecimento da população, é conhecido como:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> a) Explosão demográfica.</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> b) Transição demográfica.</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> c) Crescimento vegetativo nulo.</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> d) Dispersão populacional.</label>
+        </div>
+        <div id="res3" class="resolution">
+            <strong>Alternativa correta: b) Transição demográfica.</strong><br>
+            A transição demográfica atual caracteriza-se pela redução do crescimento acelerado das décadas passadas, que deu lugar a um crescimento lento, marcado pelo envelhecimento populacional e pela redução da base jovem devido à queda das taxas de natalidade.
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. Sobre os fluxos populacionais e as categorias de deslocamento internacional, assinale a alternativa que define corretamente a condição dos "Apátridas":</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> a) Pessoas que migram voluntariamente em busca de empregos e continuam amparadas pelo seu país de origem.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> b) Indivíduos que fogem devido à ameaça de guerras ou perseguição e recebem proteção garantida como refugiados.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> c) Pessoas que não têm nacionalidade reconhecida por nenhum país, ou seja, nenhum Estado as considera legalmente como cidadãs.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> d) Estrangeiros que possuem múltipla nacionalidade e transitam livremente entre diferentes blocos econômicos.</label>
+        </div>
+        <div id="res4" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            Segundo o material, os apátridas são definidos como pessoas que não têm nacionalidade reconhecida por nenhum país. Isso pode ocorrer porque nasceram em um local cujas leis não garantem a nacionalidade ou porque perderam sua cidadania original.
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. De acordo com o geógrafo Milton Santos, a globalização funciona através de "redes materiais" e "redes imateriais". Qual das alternativas a seguir é um exemplo de rede imaterial?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> a) O transporte de mercadorias em navios através de hidrovias.</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> b) O deslocamento de pessoas através de rodovias e ferrovias intercontinentais.</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> c) O fluxo não concreto de informações, ligações de internet e transações financeiras bancárias (como o PIX).</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> d) A construção de grandes infraestruturas globais, como portos e aeroportos logísticos.</label>
+        </div>
+        <div id="res5" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            As redes imateriais transportam fluxos não concretos, invisíveis fisicamente, como as comunicações via internet, transmissão de dados e as transações financeiras em bancos ou aplicativos. As vias físicas (rodovias, ferrovias, aerovias e hidrovias) compõem as redes materiais.
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. Na dinâmica da integração econômica regional, qual é a principal característica técnica que classifica o MERCOSUL no estágio de "União Aduaneira"?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> a) A simples redução de tarifas alfandegárias internas sem nenhuma política em comum para o exterior.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> b) A permissão total de livre circulação de pessoas em conjunto com a adoção de uma moeda única continental.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> c) A adoção de uma Tarifa Externa Comum (TEC), em que os países-membros cobram as mesmas taxas para importar e exportar para países fora do bloco.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> d) A submissão jurídica total dos países sul-americanos aos regulamentos fiscais da União Europeia.</label>
+        </div>
+        <div id="res6" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            Embora o objetivo final do Mercosul seja tornar-se um mercado comum, seu estágio atual o classifica como uma União Aduaneira, pois sua principal característica é a adoção de uma Tarifa Externa Comum (TEC) para as trocas comerciais com nações externas ao bloco.
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. O Conselho de Segurança é o mais importante órgão decisório da Organização das Nações Unidas (ONU) quando se trata de manter a paz global. Como ele é composto?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> a) Por todos os 193 membros da ONU, votando sempre de forma igualitária e democrática em todas as resoluções militares.</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> b) Por 15 membros no total, sendo que 5 deles são permanentes (EUA, Reino Unido, França, Rússia e China) e detêm o poder de veto.</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> c) Pelos representantes do G7 e das principais agências financeiras, como o FMI e o Banco Mundial.</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> d) Exclusivamente pelas nações europeias e os Estados Unidos, não permitindo assentos para a Ásia ou América Latina.</label>
+        </div>
+        <div id="res7" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            O Conselho de Segurança tem 15 membros. Dez ocupam assentos provisórios rotativos, enquanto as grandes potências vencedoras da Segunda Guerra Mundial ocupam os 5 assentos permanentes (EUA, Reino Unido, França, Rússia e China) que possuem o poder de vetar e impedir qualquer resolução.
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. O BRICS busca maior cooperação e fortalecimento das economias emergentes. Qual instituição financeira esse grupo criou em 2014 para atuar de forma independente como alternativa de financiamento para infraestrutura, sem depender das potências ocidentais?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> a) O Fundo Monetário Internacional (FMI).</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> b) O Novo Banco de Desenvolvimento (NDB).</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> c) A Organização para a Cooperação e Desenvolvimento Econômico (OCDE).</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> d) O Banco Central Europeu.</label>
+        </div>
+        <div id="res8" class="resolution">
+            <strong>Alternativa correta: b) O Novo Banco de Desenvolvimento (NDB).</strong><br>
+            O Novo Banco de Desenvolvimento (NDB) foi fundado pelos países do BRICS em 2014 para atuar como alternativa ao Banco Mundial, fornecendo financiamentos para infraestrutura, estradas e projetos sustentáveis, garantindo maior autonomia ao bloco.
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. As organizações internacionais atuam para garantir a estabilidade global. Apesar de agirem em conjunto, o Banco Mundial e o Fundo Monetário Internacional (FMI) têm funções distintas. Qual é o papel principal do FMI?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> a) Financiar programas de erradicação da fome e suporte agrícola aos países do Sul geoeconômico.</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> b) Promover o julgamento internacional e punir violações de direitos humanos em guerras.</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> c) Conceder a maior parte dos empréstimos físicos destinados à construção de rodovias e projetos de infraestrutura civil.</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> d) Atuar como coordenador e fiscalizador dos empréstimos e das políticas econômicas dos países devedores, visando garantir a estabilidade financeira.</label>
+        </div>
+        <div id="res9" class="resolution">
+            <strong>Alternativa correta: d).</strong><br>
+            Enquanto o Banco Mundial se concentra na concessão de recursos físicos para investimentos diretos e sociais (como infraestrutura, saúde e educação), a principal função do FMI é atuar como fiscalizador e coordenador macroeconômico, ditando políticas aos países devedores para garantir a estabilidade financeira do sistema global.
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. A Revolução Industrial transformou profundamente a geopolítica e a economia global. Qual das alternativas aponta uma grande consequência espacial/internacional dessa revolução citada no material?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> a) Promoveu o fortalecimento e expansão generalizada do trabalho puramente artesanal.</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> b) Consolidou uma divisão econômica em que países industrializados vendem tecnologia e manufaturados, e os não industrializados vendem matérias-primas, ampliando a desigualdade global.</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> c) Acabou permanentemente com o acúmulo de capital por parte da burguesia.</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> d) Forçou todos os países do Hemisfério Sul a adotarem a indústria automobilística nacional.</label>
+        </div>
+        <div id="res10" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            A Revolução Industrial alterou drasticamente a economia ao estabelecer uma nova divisão mundial do trabalho. Ela iniciou o desnível onde os países industrializados concentram o lucro vendendo tecnologia, ao passo que as nações não industrializadas se focam em exportar matérias-primas menos valorizadas.
+        </div>
+    </div>
+
+    <script>
+        function showResolution(id) {
+            var element = document.getElementById(id);
+            // Ao clicar no radio button, exibe a resolução de forma dinâmica abaixo das opções
+            element.style.display = "block";
+        }
+    </script>
+</body>
+</html>

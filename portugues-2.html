@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado 02 - Língua Portuguesa (8º Ano)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2980b9;
+            margin-bottom: 30px;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #3498db;
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radio-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .radio-label:hover {
+            background-color: #f1f9fe;
+        }
+        .radio-label input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .resolution {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f6fd;
+            border-left: 5px solid #2980b9;
+            border-radius: 4px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simulado 02: Revisão de Português - 8º Ano</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. Com base nas características do gênero "Crônica", qual é a sua principal essência e temática?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> a) Relatar fatos históricos distantes com precisão científica e linguagem totalmente impessoal.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> b) Entreter, envolver e divertir o leitor, partindo de fatos do dia a dia para provocar reflexões críticas ou filosóficas.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> c) Descrever cenários fantasiosos com uma estrutura rígida e linguagem altamente formal.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> d) Noticiar eventos políticos de forma neutra, focando em longos períodos de tempo e múltiplos espaços.</label>
+        </div>
+        <div id="res1" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            Conforme o mapa mental do gênero, os objetivos principais da crônica são buscar entreter, envolver e divertir o leitor, provocando reflexões críticas sobre o comportamento humano. Seus temas baseiam-se em fatos comuns, banais e cotidianos.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. Assinale a alternativa que apresenta um ERRO em relação às regras de concordância com o verbo "SER":</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> a) Cem reais são muito por este livro.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> b) Agora são duas e doze da manhã!</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> c) As meninas são a alegria da família.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> d) Hoje é 10 de setembro.</label>
+        </div>
+        <div id="res2" class="resolution">
+            <strong>Alternativa correta: a) Cem reais são muito por este livro.</strong><br>
+            A alternativa "a" contém erro. A regra de indicação de quantidades dita que, ao se referir a preço, peso ou medida acompanhado de adjuntos adverbiais de intensidade (como "muito", "pouco"), o verbo SER deve ficar SEMPRE no singular, mesmo que o numeral seja plural. O correto é: "Cem reais <strong>é</strong> muito por este livro".
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. Analise a oração: "Vieram à aula um garoto e duas garotas". Sobre a concordância com o sujeito composto nesta frase, é correto afirmar que:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> a) O verbo está errado, pois deveria obrigatoriamente concordar apenas com "garoto" no singular.</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> b) A concordância está correta, pois quando o verbo vem ANTES do sujeito composto, ele pode ser flexionado no plural ou concordar com o núcleo mais próximo.</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> c) O verbo deveria estar na 3ª pessoa do singular porque se trata de uma oração sem sujeito.</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> d) A frase fere as normas da língua portuguesa, pois o sujeito composto deve sempre anteceder o verbo.</label>
+        </div>
+        <div id="res3" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            A regra de concordância para sujeito composto indica que, quando o verbo vem antes do sujeito (ordem indireta), ele possui duas formas corretas: ou é flexionado no plural ("Vieram à aula um garoto e duas garotas") ou concorda com o núcleo mais próximo ("Veio à aula um garoto e duas garotas").
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. Em qual das alternativas abaixo ocorre um caso de Oração Sem Sujeito (Sujeito Inexistente)?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> a) Necessita-se de novos funcionários.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> b) Consertam-se relógios antigos nesta loja.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> c) Havia muitos interessados na feira de ciências.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> d) Chegaram cedo os responsáveis pela obra.</label>
+        </div>
+        <div id="res4" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            O verbo "Haver" no sentido de "existir, ocorrer ou acontecer" atua como verbo impessoal, não admitindo sujeito e permanecendo sempre na 3ª pessoa do singular. A alternativa "a" possui sujeito indeterminado; a "b" possui sujeito paciente ("relógios"); e a "d" sujeito simples deslocado.
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. Identifique a frase em que o "SE" exerce a função sintática de Índice de Indeterminação do Sujeito:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> a) Constroem-se edifícios seguros.</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> b) A menina cortou-se acidentalmente.</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> c) Não se reformulou o projeto da prefeitura.</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> d) Necessita-se de novos produtos médicos.</label>
+        </div>
+        <div id="res5" class="resolution">
+            <strong>Alternativa correta: d) Necessita-se de novos produtos médicos.</strong><br>
+            Quando o "SE" acompanha um Verbo Transitivo Indireto (VTI - que exige preposição "de"), Verbo Intransitivo (VI) ou Verbo de Ligação, ele atua como índice de indeterminação, e o verbo fica na 3ª pessoa do singular. Nas alternativas A e C, o verbo é transitivo direto (VTD), logo o "se" é Partícula Apassivadora.
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. Qual é a principal diferença morfológica e sintática entre Frase Nominal e Oração?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> a) A oração sempre possui sentido completo sem verbo, enquanto a frase nominal exige um Verbo de Ligação.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> b) A frase nominal não é constituída por verbos; já a oração é a unidade sintática formada obrigatoriamente em torno de um verbo.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> c) A oração não possui sujeito nem predicado, sendo apenas uma frase com pronomes.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> d) Não existe diferença, pois tanto a oração quanto a frase nominal compõem sempre um período composto.</label>
+        </div>
+        <div id="res6" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            A Frase Nominal é um enunciado com sentido completo, mas não constituído por verbos (ex: "Fogo!"). Já a Oração é a estrutura linguística cujo sentido gravita em torno de, no mínimo, um verbo ou locução verbal.
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. Leia a oração: "A ilha está deserta". Como classificamos o predicado dessa frase e qual é o seu núcleo?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> a) Predicado Verbal, sendo o núcleo o verbo "está".</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> b) Predicado Nominal, sendo o núcleo a palavra "deserta" (nome/característica).</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> c) Predicado Verbo-Nominal, com os núcleos "está" e "deserta".</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> d) Predicado Verbal, sendo o núcleo "A ilha".</label>
+        </div>
+        <div id="res7" class="resolution">
+            <strong>Alternativa correta: b) Predicado Nominal, sendo o núcleo a palavra "deserta".</strong><br>
+            O verbo "estar" atua como Verbo de Ligação, cuja função é apenas conectar o sujeito à sua característica ou estado. O núcleo do Predicado Nominal é sempre o Predicativo do Sujeito (o adjetivo ou substantivo, no caso, "deserta").
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. Assinale a alternativa em que a regra de concordância verbal com os pronomes relativos QUE e QUEM foi aplicada CORRETAMENTE:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> a) Fomos nós quem desenhamos aquele painel.</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> b) Foram os grafiteiros que desenhou aquele painel.</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> c) Fomos nós que resolveu o problema.</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> d) Foram os grafiteiros quem desenhou aquele painel.</label>
+        </div>
+        <div id="res8" class="resolution">
+            <strong>Alternativa correta: d).</strong><br>
+            Quando se usa o pronome relativo QUEM, o verbo deve ficar sempre na 3ª pessoa do singular ("Foram os grafiteiros quem desenhou"). Se o pronome fosse QUE, o verbo concordaria com o antecedente ("Foram os grafiteiros que desenharam" ou "Fomos nós que desenhamos").
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. Na oração "Consideraram a prova fácil", a não explicitação de quem praticou a ação nos leva a classificar o sujeito como:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> a) Oculto / Desinencial.</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> b) Simples.</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> c) Indeterminado.</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> d) Inexistente.</label>
+        </div>
+        <div id="res9" class="resolution">
+            <strong>Alternativa correta: c) Indeterminado.</strong><br>
+            A classificação é Sujeito Indeterminado. Isso acontece quando o verbo é colocado na 3ª pessoa do plural ("Consideraram") e não há, no contexto ou na oração, menção a quem praticou a ação (o pronome "eles" fica implícito, mas sem um referente explícito).
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. Na frase "Estaremos em breve aí para visitar o museu", qual é a classificação correta do sujeito?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> a) Oculto / Desinencial (Nós).</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> b) Sujeito Simples (museu).</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> c) Sujeito Inexistente (oração sem sujeito).</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> d) Sujeito Indeterminado.</label>
+        </div>
+        <div id="res10" class="resolution">
+            <strong>Alternativa correta: a) Oculto / Desinencial.</strong><br>
+            O sujeito é Oculto (também chamado de desinencial ou implícito), pois o pronome pessoal "Nós" não está escrito na oração, mas é perfeitamente identificável pela desinência (terminação) do verbo "Estaremos" (1ª pessoa do plural).
+        </div>
+    </div>
+
+    <script>
+        function showResolution(id) {
+            var element = document.getElementById(id);
+            // Ao clicar na opção (radio button), exibe a resolução de forma animada e suave
+            element.style.display = "block";
+        }
+    </script>
+</body>
+</html>

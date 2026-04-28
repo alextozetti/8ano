@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado 02 - Matemática (8º Ano)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f7;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #8e44ad;
+            margin-bottom: 30px;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #9b59b6;
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radio-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .radio-label:hover {
+            background-color: #f9f9f9;
+        }
+        .radio-label input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .resolution {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f5eef8;
+            border-left: 5px solid #8e44ad;
+            border-radius: 4px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simulado 02: Revisão de Matemática - 8º Ano</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. Resolva a expressão utilizando as propriedades da potenciação: (10² . 10³ . 10⁰) ÷ 10⁴.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> a) 1</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> b) 10</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> c) 100</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> d) 1.000</label>
+        </div>
+        <div id="res1" class="resolution">
+            <strong>Alternativa correta: b) 10.</strong><br>
+            Passo 1: Lembrar que 10⁰ = 1.<br>
+            Passo 2: Multiplicação de mesma base: 10² × 10³ × 10⁰ = 10²⁺³⁺⁰ = 10⁵.<br>
+            Passo 3: Divisão de potências: 10⁵ ÷ 10⁴ = 10⁵⁻⁴ = 10¹ = 10.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. Qual é o menor número natural que deve ser multiplicado por 180 para que o produto seja um quadrado perfeito?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> a) 2</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> b) 3</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> c) 5</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> d) 10</label>
+        </div>
+        <div id="res2" class="resolution">
+            <strong>Alternativa correta: c) 5.</strong><br>
+            Passo 1: Fatorar 180 em números primos: 180 = 2² . 3² . 5¹.<br>
+            Passo 2: Para ser um quadrado perfeito, todos os expoentes devem ser pares. O expoente do 2 e do 3 já são pares, mas o 5¹ é ímpar, então precisamos de mais um fator 5.<br>
+            Passo 3: Multiplicar 180 por 5 resulta em 900, que é 30².
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. Calcule o valor da seguinte expressão numérica: √144 + √225 - √64.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> a) 15</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> b) 17</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> c) 19</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> d) 21</label>
+        </div>
+        <div id="res3" class="resolution">
+            <strong>Alternativa correta: c) 19.</strong><br>
+            Passo 1: Calcular cada raiz exata: √144 = 12 (pois 12² = 144); √225 = 15 (pois 15² = 225) e √64 = 8 (pois 8² = 64).<br>
+            Passo 2: Efetuar a soma e subtração: 12 + 15 - 8 = 27 - 8 = 19.
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. De acordo com a classificação dos sistemas de equações lineares, quando um sistema possui infinitas soluções e as retas que o representam no gráfico são coincidentes, ele é classificado como:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> a) Sistema Possível e Determinado (SD).</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> b) Sistema Possível Indeterminado (SPI).</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> c) Sistema Impossível (SI).</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> d) Sistema Nulo Concorrente.</label>
+        </div>
+        <div id="res4" class="resolution">
+            <strong>Alternativa correta: b) Sistema Possível Indeterminado (SPI).</strong><br>
+            O SPI ocorre quando o sistema possui infinitas soluções. As equações são matematicamente equivalentes (uma é múltipla da outra), o que significa que representam exatamente a mesma reta no plano cartesiano (retas coincidentes).
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. A soma de um número com o seu triplo é igual a 52. Qual é esse número?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> a) 12</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> b) 13</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> c) 26</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> d) 39</label>
+        </div>
+        <div id="res5" class="resolution">
+            <strong>Alternativa correta: b) 13.</strong><br>
+            Passo 1: Seja x o número procurado.<br>
+            Passo 2: Montar a equação: x + 3x = 52.<br>
+            Passo 3: Simplificar: 4x = 52.<br>
+            Passo 4: Dividir: x = 52 ÷ 4 = 13.
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. Em relação às raízes enésimas de índice ímpar (como raízes cúbicas e quintas), é matematicamente correto afirmar que:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> a) Só existem para radicandos positivos.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> b) O resultado da raiz é sempre não negativo (positivo ou zero).</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> c) Existem para qualquer número real e o sinal do resultado é o mesmo sinal do radicando.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> d) Não existem no conjunto dos números reais se o radicando for negativo.</label>
+        </div>
+        <div id="res6" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            As raízes de índice ímpar (n = 3, 5, 7...) existem para qualquer número real (positivo, negativo ou zero). O sinal do resultado é sempre o mesmo do radicando. Por exemplo: ³√(-64) = -4. Diferente das raízes de índice par, que não existem para números negativos no conjunto dos reais.
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. A notação científica exige a forma a . 10ⁿ, em que 1 ≤ a < 10. Indique qual é a representação correta do número 345.000 em notação científica:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> a) 34,5 . 10⁴</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> b) 3,45 . 10⁵</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> c) 0,345 . 10⁶</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> d) 3,45 . 10⁻⁵</label>
+        </div>
+        <div id="res7" class="resolution">
+            <strong>Alternativa correta: b) 3,45 . 10⁵.</strong><br>
+            A regra dita que o fator "a" deve ser um número entre 1 e 9,99... Deslocando a vírgula do final de 345.000 para a esquerda em 5 casas, obtemos 3,45. Logo, multiplicamos por 10 elevado a 5 (positivo, pois o número original é maior que 1).
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. Vitor e Mateus jogam no mesmo time de futebol de areia. No último campeonato, os dois juntos marcaram 54 gols. Sabe-se que Vitor marcou 12 gols a mais que Mateus. Quantos gols Vitor marcou neste campeonato?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> a) 21 gols</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> b) 33 gols</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> c) 42 gols</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> d) 66 gols</label>
+        </div>
+        <div id="res8" class="resolution">
+            <strong>Alternativa correta: b) 33 gols.</strong><br>
+            Seja "x" a quantidade de gols de Mateus. Os gols de Vitor serão representados por "x + 12".<br>
+            A soma de ambos é: x + (x + 12) = 54 → 2x + 12 = 54.<br>
+            Subtraindo 12: 2x = 42 → x = 21 (Mateus).<br>
+            Vitor = 21 + 12 = 33 gols.
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. Resolva a seguinte equação envolvendo raízes quadradas para encontrar o valor de x: √x + √16 = 11</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> a) 7</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> b) 14</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> c) 25</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> d) 49</label>
+        </div>
+        <div id="res9" class="resolution">
+            <strong>Alternativa correta: d) 49.</strong><br>
+            Passo 1: Calcular √16 = 4.<br>
+            Passo 2: Substituir na equação original: √x + 4 = 11.<br>
+            Passo 3: Isolar a raiz: √x = 11 - 4 → √x = 7.<br>
+            Passo 4: Para eliminar a raiz, elevar ambos os lados ao quadrado: (√x)² = 7² → x = 49.
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. Um terreno quadrado que abrigará uma praça tem área total de 576 m². Qual é a medida do comprimento do lado desse terreno?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> a) 22 m</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> b) 24 m</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> c) 26 m</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> d) 28 m</label>
+        </div>
+        <div id="res10" class="resolution">
+            <strong>Alternativa correta: b) 24 m.</strong><br>
+            Passo 1: A fórmula da área do quadrado é A = lado².<br>
+            Passo 2: Substituindo os valores, temos lado² = 576.<br>
+            Passo 3: Extrair a raiz quadrada de 576, lado = √576 = 24 m. (Para verificação: 24 × 24 = 576).
+        </div>
+    </div>
+
+    <script>
+        function showResolution(id) {
+            var element = document.getElementById(id);
+            // Mostra a resolução ao clicar na opção de rádio
+            element.style.display = "block";
+        }
+    </script>
+</body>
+</html>

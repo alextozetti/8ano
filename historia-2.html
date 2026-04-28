@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado 02 - História (Revoluções, Iluminismo e Independência dos EUA)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfbf7;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #c0392b;
+            margin-bottom: 30px;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #e74c3c;
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radio-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .radio-label:hover {
+            background-color: #f9f9f9;
+        }
+        .radio-label input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .resolution {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fdedec;
+            border-left: 5px solid #c0392b;
+            border-radius: 4px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simulado 02: Revisão de História - 8º Ano</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. Durante a República de Oliver Cromwell, a Inglaterra promulgou os Atos de Navegação (1651). O que essas leis determinavam e qual foi sua principal consequência internacional?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> a) Determinavam a liberdade religiosa, o que gerou guerra com o Vaticano.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> b) Determinavam que mercadorias que entrassem ou saíssem da Grã-Bretanha só podiam ser transportadas em navios ingleses ou dos países produtores, provocando a Guerra Anglo-holandesa.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> c) Determinavam a prisão de camponeses, causando o movimento dos cavadores e niveladores.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> d) Determinavam a restauração da monarquia, entregando o poder novamente aos Stuart.</label>
+        </div>
+        <div id="res1" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            A criação dos Atos de Navegação (1651) determinava que todas as mercadorias que entrassem ou saíssem pelos portos britânicos deveriam ser transportadas em navios ingleses ou pertencentes aos países produtores. Essa medida prejudicou fortemente os comerciantes holandeses e provocou a Guerra Anglo-holandesa (1651-1654), que terminou com vitória britânica.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. O documento que encerrou a Revolução Gloriosa (1688) e pôs fim ao absolutismo na Inglaterra, estabelecendo a Monarquia Parlamentar, foi:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> a) A Constituição de 1791.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> b) O Tratado de Paris.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> c) A Carta do Povo.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> d) A Declaração dos Direitos (Bill of Rights).</label>
+        </div>
+        <div id="res2" class="resolution">
+            <strong>Alternativa correta: d).</strong><br>
+            Guilherme de Orange teve que acatar o Bill of Rights (Declaração dos Direitos), o que estabeleceu a superioridade da lei sobre a vontade do rei, implantando o liberalismo e garantindo que "o Rei reina, mas não governa".
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. Na fase inicial da Revolução Industrial, os operários enfrentaram péssimas condições de trabalho. Um dos primeiros movimentos de revolta foi o Ludismo, caracterizado por:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> a) Elaborar documentos exigindo o voto universal e participação no Parlamento.</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> b) Formar partidos políticos burgueses para monopolizar a extração de carvão.</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> c) Culpar as máquinas pela falta de emprego e invadir fábricas para destruí-las.</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> d) Negociar de forma pacífica o aumento de salários nas Câmaras de Comércio.</label>
+        </div>
+        <div id="res3" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            O Ludismo foi uma revolta desorganizada na qual os operários culpavam as máquinas pela queda dos salários e falta de emprego, invadindo as fábricas para destruí-las. O governo reprimiu esse movimento com severidade, inclusive aplicando pena de morte.
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. Para o pensamento do filósofo iluminista John Locke, o conhecimento se origina da experiência, e o governo não pode violar os "direitos naturais" do homem. Quais são esses direitos?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> a) Direito de governar, de censurar a imprensa e de acumular escravos.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> b) Direito à vida, à liberdade e à propriedade.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> c) Direito universal de moradia gratuita, educação laica e pensão estatal.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> d) Direito divino dos monarcas, submissão da fé e trabalho obrigatório.</label>
+        </div>
+        <div id="res4" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            John Locke defendia que os direitos naturais, que são inerentes a todos os seres humanos, são o direito à vida, à liberdade e à propriedade.
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. Antes da independência, a Inglaterra aumentou severamente a pressão fiscal e o controle sobre as Treze Colônias através de legislações intoleráveis. Uma dessas leis foi a Lei do Aquartelamento, que:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> a) Proibia os colonos americanos de comercializar qualquer produto sem um selo inglês.</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> b) Obrigava todo colono a dar moradia, alimento e transporte para soldados ingleses.</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> c) Fechou definitivamente o porto de Boston até o pagamento do imposto do chá.</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> d) Obrigava os colonos a comprarem chá exclusivamente das Antilhas francesas.</label>
+        </div>
+        <div id="res5" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            A Lei do Aquartelamento foi uma medida opressiva que obrigava todo colono a dar moradia, alimento e transporte para os soldados do exército inglês.
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. A Constituição dos Estados Unidos, promulgada em 1787, criou a República, separou os poderes e foi baseada em ideias iluministas. Contudo, ela instituiu uma "cidadania limitada" no novo país porque:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> a) Distribuiu igualmente as terras entre escravos e patrões, mas retirou a liberdade religiosa.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> b) Permitiu que a Inglaterra continuasse governando a região Sul militarmente.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> c) Aboliu o voto, entregando a George Washington poderes vitalícios e absolutos.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> d) Manteve a escravidão com mais de meio milhão de escravizados e não concedeu direitos políticos para indígenas, negros libertos e mulheres.</label>
+        </div>
+        <div id="res6" class="resolution">
+            <strong>Alternativa correta: d).</strong><br>
+            Apesar do discurso de liberdade, a cidadania era limitada: negros escravizados (mais de meio milhão) continuaram na mesma condição, e indígenas, negros libertos e mulheres não possuíam qualquer direito político (o voto feminino só foi conquistado em 1920).
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. A sociedade do Antigo Regime na França era estamental, ou seja, dividida em estados com pouquíssima mobilidade. Qual estado era responsável por sustentar a economia do país pagando todos os impostos?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> a) O 1º Estado, formado pelo Clero.</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> b) O 2º Estado, composto pela Nobreza Cortesã e Provincial.</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> c) O 3º Estado, formado pelo povo (camponeses e trabalhadores urbanos) e pela burguesia.</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> d) O grupo dos Notáveis, convocado unicamente pelo Rei Luís XVI.</label>
+        </div>
+        <div id="res7" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            Na sociedade estamental francesa, os altos impostos recaíam todos sobre os ombros do 3º Estado, que englobava trabalhadores rurais, trabalhadores urbanos (sans-culottes) e a burguesia, sustentando assim os gastos e o luxo do 1º e 2º Estados.
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. Em 14 de julho de 1789, o povo tomou as ruas de Paris e protagonizou a "Queda da Bastilha". Qual é o simbolismo deste evento histórico?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> a) Representou a aliança política definitiva entre a burguesia e os ingleses.</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> b) Representou a queda do autoritarismo, da arbitrariedade e do poder real absolutista, além de ter grande efeito prático (obtenção de armas e munição).</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> c) Representou o exílio voluntário e pacífico do Rei Luís XVI para a Áustria.</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> d) Foi um evento meramente econômico para forçar o tabelamento do preço do pão.</label>
+        </div>
+        <div id="res8" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            A Queda da Bastilha teve forte significado prático (tomada de munição e armas pelo povo) e simbólico, pois aquela antiga prisão representava o autoritarismo, a arbitrariedade e o poder do monarca absolutista.
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. Durante a Assembleia Nacional Constituinte da França, foi redigido o documento mais importante da revolução burguesa, chamado "Declaração dos Direitos do Homem e do Cidadão". Este documento defendia:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> a) O restabelecimento das leis feudais e o voto apenas para monarquistas.</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> b) A liberdade (de culto e expressão), a igualdade perante a lei e o direito inalienável à propriedade privada.</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> c) O poder irrestrito do Papa sobre a política da Europa Continental.</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> d) A imediata igualdade política entre homens e mulheres de todas as classes sociais.</label>
+        </div>
+        <div id="res9" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            A Declaração, de forte influência iluminista, aboliu as leis feudais e estabeleceu como direitos inalienáveis a liberdade (de culto, expressão e associação), a igualdade perante a lei e a propriedade privada (refletindo o forte interesse burguês). Olympe de Gouges tentou incluir os direitos femininos, mas acabou sendo rejeitada e guilhotinada.
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. A Revolução Francesa passou por uma fase de grande radicalização política conhecida como "Período do Terror". Qual grupo político e líder estiveram à frente desse governo autoritário e violento?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> a) Girondinos, liderados por Napoleão Bonaparte.</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> b) Monarquistas, liderados por Luís XVI e Maria Antonieta.</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> c) Deputados da Planície, liderados por Danton e Marat.</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> d) Jacobinos (montanheses), liderados por Maximilien Robespierre.</label>
+        </div>
+        <div id="res10" class="resolution">
+            <strong>Alternativa correta: d).</strong><br>
+            O Período do Terror ocorreu durante a Convenção Montanhesa, quando os Jacobinos (a ala mais à esquerda, defensores da radicalização), sob a liderança de Robespierre, assumiram o poder. Eles instauraram o terror condenando "inimigos da Revolução" à guilhotina sem qualquer direito de defesa.
+        </div>
+    </div>
+
+    <script>
+        function showResolution(id) {
+            var element = document.getElementById(id);
+            // Mostra a resolução ao clicar na opção de rádio
+            element.style.display = "block";
+        }
+    </script>
+</body>
+</html>
