@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado 02 - Ciências Naturais (Energia e Circuitos)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #3498db;
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radio-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .radio-label:hover {
+            background-color: #f9f9f9;
+        }
+        .radio-label input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .resolution {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f8f5;
+            border-left: 5px solid #1abc9c;
+            border-radius: 4px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simulado 02: Energia e Circuitos Elétricos</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. Juliane é natural de São Paulo e, em tempos de baixa temperatura, gosta de tomar banho com água quente. Todas as manhãs, ela liga a chave de seu chuveiro e toma banho quente. O tipo de transformação de energia que ocorre na situação descrita é:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> a) mecânica para elétrica.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> b) eletromagnética para sonora.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> c) elétrica para térmica.</label>
+            <label class="radio-label"><input type="radio" name="q1" onchange="showResolution('res1')"> d) química para luminosa.</label>
+        </div>
+        <div id="res1" class="resolution">
+            <strong>Alternativa correta: c) elétrica para térmica.</strong><br>
+            O chuveiro elétrico funciona como um resistor. Quando a corrente elétrica passa pela resistência do chuveiro, a energia elétrica é convertida em calor (energia térmica) devido ao Efeito Joule, aquecendo a água.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. Qual componente de um circuito elétrico é utilizado para controlar e converter a energia elétrica em energia térmica (como ocorre em torradeiras e chuveiros)?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> a) Gerador.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> b) Resistor.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> c) Velocímetro.</label>
+            <label class="radio-label"><input type="radio" name="q2" onchange="showResolution('res2')"> d) Termômetro.</label>
+        </div>
+        <div id="res2" class="resolution">
+            <strong>Alternativa correta: b) Resistor.</strong><br>
+            O resistor é o componente elétrico que se opõe à passagem da corrente elétrica e dissipa energia em forma de calor, fenômeno conhecido como Efeito Joule.
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. Identifique as unidades de medida das grandezas elétricas Tensão, Corrente Elétrica e Potência, respectivamente:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> a) Volts (V), Amperes (A) e Watts (W).</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> b) Amperes (A), Ohms (Ω) e Volts (V).</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> c) Watts (W), Volts (V) e Amperes (A).</label>
+            <label class="radio-label"><input type="radio" name="q3" onchange="showResolution('res3')"> d) Ohms (Ω), Watts (W) e Amperes (A).</label>
+        </div>
+        <div id="res3" class="resolution">
+            <strong>Alternativa correta: a) Volts (V), Amperes (A) e Watts (W).</strong><br>
+            A Tensão (Diferença de Potencial) é medida em Volts (V); a Corrente Elétrica (movimento ordenado de elétrons) é medida em Amperes (A); e a Potência (taxa de transferência de energia) é medida em Watts (W).
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. A energia produzida através do movimento, como o vento girando as pás de uma turbina eólica ou a água caindo em uma usina hidrelétrica, é chamada de energia:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> a) elétrica.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> b) química.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> c) cinética ou mecânica.</label>
+            <label class="radio-label"><input type="radio" name="q4" onchange="showResolution('res4')"> d) luminosa.</label>
+        </div>
+        <div id="res4" class="resolution">
+            <strong>Alternativa correta: c) cinética ou mecânica.</strong><br>
+            A energia cinética (ou mecânica) está diretamente associada ao movimento dos corpos, sendo convertida posteriormente em energia elétrica nas usinas.
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. (Enem - 2018 adaptada) Um poraquê de 1 metro de comprimento, em perigo, produz uma corrente em torno de 2 ampères e uma voltagem de 600 volts. Sabendo que a potência é calculada pela fórmula P = i . U, qual equipamento abaixo tem potência similar à do peixe?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> a) Computador (300 W)</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> b) Aspirador de pó (600 W)</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> c) Churrasqueira elétrica (1200 W)</label>
+            <label class="radio-label"><input type="radio" name="q5" onchange="showResolution('res5')"> d) Secadora de roupas (3600 W)</label>
+        </div>
+        <div id="res5" class="resolution">
+            <strong>Alternativa correta: c) Churrasqueira elétrica (1200 W).</strong><br>
+            Utilizando a fórmula P = i . U, multiplicamos a corrente (2 A) pela voltagem (600 V). Portanto, P = 2 . 600 = 1200 W, que é a potência equivalente à da churrasqueira elétrica da tabela.
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. Qual das seguintes afirmações sobre a Lei de Ohm está correta?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> a) A corrente elétrica em um circuito é diretamente proporcional à resistência elétrica.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> b) A resistência elétrica é inversamente proporcional à voltagem aplicada.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> c) A corrente elétrica em um circuito é igual à voltagem aplicada dividida pela resistência elétrica.</label>
+            <label class="radio-label"><input type="radio" name="q6" onchange="showResolution('res6')"> d) A resistência é a quantidade de energia magnética gerada pelos fios.</label>
+        </div>
+        <div id="res6" class="resolution">
+            <strong>Alternativa correta: c).</strong><br>
+            A Lei de Ohm (I = V / R) estabelece matematicamente que a corrente elétrica em um circuito é igual à voltagem (tensão) aplicada dividida pela resistência elétrica do componente.
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. Sobre o conceito científico de corrente elétrica, podemos afirmar que:</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> a) É uma forma de energia armazenada passivamente em baterias e condensadores.</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> b) É o movimento ordenado de partículas carregadas (elétrons) em um circuito elétrico.</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> c) Só pode ser gerada por meio de raios e fenômenos atmosféricos durante uma tempestade.</label>
+            <label class="radio-label"><input type="radio" name="q7" onchange="showResolution('res7')"> d) É um tipo de energia puramente mecânica utilizada exclusivamente em motores industriais.</label>
+        </div>
+        <div id="res7" class="resolution">
+            <strong>Alternativa correta: b).</strong><br>
+            A corrente elétrica é definida formalmente como o movimento ordenado de partículas carregadas através de um material condutor quando submetidas a uma diferença de potencial.
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. Um ferro de passar roupas a vapor tem uma potência de 1440 W e tensão de funcionamento de 110 V. As extensões disponíveis suportam correntes de 5 A, 10 A, 15 A, 20 A e 25 A (preços crescentes). Qual é a extensão de menor custo que suporta esse ferro de forma adequada e segura?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> a) 5 A</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> b) 10 A</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> c) 15 A</label>
+            <label class="radio-label"><input type="radio" name="q8" onchange="showResolution('res8')"> d) 20 A</label>
+        </div>
+        <div id="res8" class="resolution">
+            <strong>Alternativa correta: c) 15 A.</strong><br>
+            Para encontrar a corrente exigida, dividimos a potência pela tensão (I = P ÷ V). Neste caso, I = 1440 W ÷ 110 V ≈ 13,09 A. A extensão de menor custo e que suporta essa amperagem com segurança é a de 15 A.
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. Em um mês de frio intenso, um aquecedor elétrico de potência 1200 W (1,2 kW) é usado por 5 horas diárias. O custo do kWh cobrado pela concessionária é de R$ 0,40. Qual será o gasto com este aquecedor ao final de um mês (30 dias)?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> a) R$ 36,00</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> b) R$ 60,00</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> c) R$ 72,00</label>
+            <label class="radio-label"><input type="radio" name="q9" onchange="showResolution('res9')"> d) R$ 180,00</label>
+        </div>
+        <div id="res9" class="resolution">
+            <strong>Alternativa correta: c) R$ 72,00.</strong><br>
+            Energia diária consumida = 1,2 kW × 5 h = 6 kWh/dia. Energia mensal = 6 kWh × 30 dias = 180 kWh. Multiplicando pelo valor da tarifa: 180 kWh × R$ 0,40 = R$ 72,00.
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. As antigas lâmpadas incandescentes convertiam apenas 5% da energia elétrica consumida em luz, transformando o restante (95%) em calor. Considerando uma lâmpada com potência de 60 W, qual é a energia perdida na forma de calor em 1 hora (3600 segundos) de operação?</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> a) 10.800 J</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> b) 108.000 J</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> c) 205.200 J</label>
+            <label class="radio-label"><input type="radio" name="q10" onchange="showResolution('res10')"> d) 216.000 J</label>
+        </div>
+        <div id="res10" class="resolution">
+            <strong>Alternativa correta: c) 205.200 J.</strong><br>
+            A energia total consumida em 1 hora é E = P × t = 60 W × 3600 s = 216.000 Joules. Sabendo que 95% vira calor, calculamos 0,95 × 216.000 J = 205.200 J, que é a energia perdida.
+        </div>
+    </div>
+
+    <script>
+        function showResolution(id) {
+            var element = document.getElementById(id);
+            // Ao clicar no radio button, exibe a resolução correspondente
+            element.style.display = "block";
+        }
+    </script>
+</body>
+</html>
