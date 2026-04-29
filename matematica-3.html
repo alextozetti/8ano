@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado 03 - Matemática (Verdadeiro ou Falso)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f7;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #8e44ad;
+            margin-bottom: 30px;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #9b59b6;
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radio-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .radio-label:hover {
+            background-color: #f5eef8;
+            border-color: #9b59b6;
+        }
+        .radio-label input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+        .resolution {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f5eef8;
+            border-left: 5px solid #8e44ad;
+            border-radius: 4px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simulado 03: Matemática - Verdadeiro ou Falso</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. Na potenciação, a regra do expoente zero afirma que todo número diferente de zero elevado a zero é igual a 1 (exemplo: 7º = 1).</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q1" value="V" onchange="showResolution('res1')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q1" value="F" onchange="showResolution('res1')"> Falso (F)</label>
+        </div>
+        <div id="res1" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            A propriedade do expoente zero define que todo número (com exceção do zero) elevado a zero tem o resultado igual a 1.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. Para calcular uma potência com expoente negativo, a regra indica que devemos inverter o sinal da base para torná-la positiva e manter o expoente negativo (exemplo: 2⁻³ = -2⁻³).</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q2" value="V" onchange="showResolution('res2')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q2" value="F" onchange="showResolution('res2')"> Falso (F)</label>
+        </div>
+        <div id="res2" class="resolution">
+            <strong>Resposta correta: Falso.</strong><br>
+            A regra para expoente negativo determina que se deve inverter a base e tornar o expoente positivo. O correto para o exemplo seria: 2⁻³ = 1 / 2³ = 1/8.
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. Um número natural é considerado um quadrado perfeito quando a sua raiz quadrada é um número natural exato, como é o caso do número 144, cuja raiz é 12.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q3" value="V" onchange="showResolution('res3')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q3" value="F" onchange="showResolution('res3')"> Falso (F)</label>
+        </div>
+        <div id="res3" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            A definição de quadrado perfeito diz exatamente isso: um número cuja raiz quadrada resulta em um número natural (ex: √144 = 12, √225 = 15).
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. A raiz quadrada e a raiz quarta de um número negativo, como por exemplo √-16 ou ⁴√-81, possuem resultados reais e negativos.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q4" value="V" onchange="showResolution('res4')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q4" value="F" onchange="showResolution('res4')"> Falso (F)</label>
+        </div>
+        <div id="res4" class="resolution">
+            <strong>Resposta correta: Falso.</strong><br>
+            Raízes enésimas de índice par (como n=2, 4, 6...) só existem no conjunto dos números reais para radicandos não negativos. Raízes pares de números negativos não existem nos Reais.
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. As raízes de índice ímpar, como a raiz cúbica (³√) e a raiz quinta (⁵√), estão definidas para todos os números reais, inclusive os negativos, e o sinal do resultado é igual ao sinal do radicando.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q5" value="V" onchange="showResolution('res5')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q5" value="F" onchange="showResolution('res5')"> Falso (F)</label>
+        </div>
+        <div id="res5" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            Diferente da raiz quadrada, raízes de índice ímpar estão definidas para todos os reais. Se o radicando for negativo, o resultado será negativo (exemplo: ³√(-8) = -2).
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. Para escrever o número 345.000 em notação científica, obedecendo a regra a · 10ⁿ (onde 1 ≤ a < 10), a representação correta é 34,5 · 10⁴.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q6" value="V" onchange="showResolution('res6')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q6" value="F" onchange="showResolution('res6')"> Falso (F)</label>
+        </div>
+        <div id="res6" class="resolution">
+            <strong>Resposta correta: Falso.</strong><br>
+            A notação científica exige que o fator "a" esteja entre 1 e 9,99... Logo, 34,5 está incorreto. A forma exata de 345.000 é 3,45 · 10⁵.
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. Na classificação de sistemas lineares, um Sistema Possível Indeterminado (SPI) é aquele que possui infinitas soluções, pois suas equações são matematicamente equivalentes e representam a mesma reta (retas coincidentes).</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q7" value="V" onchange="showResolution('res7')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q7" value="F" onchange="showResolution('res7')"> Falso (F)</label>
+        </div>
+        <div id="res7" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            Um SPI tem infinitas soluções. Geometricamente, no plano cartesiano, as duas equações geram exatamente a mesma reta sobreposta (coincidentes).
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. Um Sistema Impossível (SI) ocorre quando as retas que o representam no gráfico são concorrentes, cruzando-se em apenas um único ponto e indicando ausência de solução.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q8" value="V" onchange="showResolution('res8')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q8" value="F" onchange="showResolution('res8')"> Falso (F)</label>
+        </div>
+        <div id="res8" class="resolution">
+            <strong>Resposta correta: Falso.</strong><br>
+            Em um Sistema Impossível (SI), as retas são paralelas; elas nunca se cruzam, e por isso não há solução. Retas concorrentes que se cruzam em um único ponto referem-se a um Sistema Determinado (SD).
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. O número π (pi) é classicamente reconhecido pela matemática como um número irracional, pois não pode ser representado como uma fração exata ou dízima periódica.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q9" value="V" onchange="showResolution('res9')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q9" value="F" onchange="showResolution('res9')"> Falso (F)</label>
+        </div>
+        <div id="res9" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            O número π (pi) é o exemplo mais clássico de número irracional. Diferente das dízimas periódicas, ele possui casas decimais infinitas e não possui um padrão de repetição.
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. Para resolver o problema "a soma de um número com o seu triplo é igual a 52", nós montamos a equação x + 3x = 52. Resolvendo-a, descobre-se que esse número procurado é 13.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q10" value="V" onchange="showResolution('res10')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q10" value="F" onchange="showResolution('res10')"> Falso (F)</label>
+        </div>
+        <div id="res10" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            A modelagem está correta: x + 3x = 52. Somando os termos, temos 4x = 52. Dividindo os dois lados por 4, obtemos x = 13.
+        </div>
+    </div>
+
+    <script>
+        function showResolution(id) {
+            var element = document.getElementById(id);
+            // Ao clicar em uma opção de rádio, exibe o bloco da resolução correspondente dinamicamente
+            element.style.display = "block";
+        }
+    </script>
+</body>
+</html>

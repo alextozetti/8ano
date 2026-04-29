@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado 03 - Ciências (Verdadeiro ou Falso)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #16a085;
+            margin-bottom: 30px;
+        }
+        .question-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #1abc9c;
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radio-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .radio-label:hover {
+            background-color: #f1fcf9;
+            border-color: #1abc9c;
+        }
+        .radio-label input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+        .resolution {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f8f5;
+            border-left: 5px solid #1abc9c;
+            border-radius: 4px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simulado 03: Ciências Naturais - Verdadeiro ou Falso</h1>
+
+    <!-- Questão 1 -->
+    <div class="question-card">
+        <div class="question-text">1. Um circuito elétrico fechado forma um caminho contínuo e sem interrupções, permitindo que a corrente elétrica circule livremente do polo positivo ao polo negativo da fonte de energia.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q1" value="V" onchange="showResolution('res1')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q1" value="F" onchange="showResolution('res1')"> Falso (F)</label>
+        </div>
+        <div id="res1" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            Um circuito elétrico fechado é exatamente aquele que inicia e finaliza no mesmo ponto, formando um caminho contínuo que possibilita a passagem da corrente elétrica. Sem esse caminho fechado, a corrente não tem como fluir.
+        </div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="question-card">
+        <div class="question-text">2. Em um circuito simples formado por pilha, interruptor e lâmpada, a lâmpada é a verdadeira fonte geradora de energia, enquanto a pilha atua apenas como condutora.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q2" value="V" onchange="showResolution('res2')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q2" value="F" onchange="showResolution('res2')"> Falso (F)</label>
+        </div>
+        <div id="res2" class="resolution">
+            <strong>Resposta correta: Falso.</strong><br>
+            A afirmação é falsa porque a lâmpada não é geradora, ela é uma "carga" que consome energia. A pilha e a bateria são os verdadeiros geradores, pois fornecem a diferença de potencial elétrico (energia) capaz de gerar a corrente no circuito.
+        </div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="question-card">
+        <div class="question-text">3. Os resistores são elementos de um circuito elétrico capazes de reduzir a corrente elétrica e de converter a energia elétrica em energia térmica (calor).</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q3" value="V" onchange="showResolution('res3')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q3" value="F" onchange="showResolution('res3')"> Falso (F)</label>
+        </div>
+        <div id="res3" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            O resistor se opõe à passagem da corrente e dissipa parte dessa energia elétrica na forma de calor, fenômeno conhecido como Efeito Joule. Chuveiros elétricos e ferros de passar são exemplos práticos do uso de resistores.
+        </div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="question-card">
+        <div class="question-text">4. Fusíveis e disjuntores são dispositivos de proteção iguais, visto que ambos devem ser obrigatoriamente substituídos por peças novas toda vez que desarmam por excesso de corrente.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q4" value="V" onchange="showResolution('res4')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q4" value="F" onchange="showResolution('res4')"> Falso (F)</label>
+        </div>
+        <div id="res4" class="resolution">
+            <strong>Resposta correta: Falso.</strong><br>
+            Eles não são iguais no processo de rearme. O fusível contém um filamento que se funde (derrete) e, por isso, precisa ser trocado quando acionado. Já os disjuntores são mecanismos que apenas desligam a corrente elétrica e não precisam ser trocados a cada acionamento, podendo ser religados.
+        </div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="question-card">
+        <div class="question-text">5. A corrente elétrica é definida cientificamente como o movimento ordenado de partículas carregadas, como elétrons, ao longo de um material condutor de um circuito.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q5" value="V" onchange="showResolution('res5')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q5" value="F" onchange="showResolution('res5')"> Falso (F)</label>
+        </div>
+        <div id="res5" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            A afirmação é a definição exata de corrente elétrica presente no material, que afirma que a corrente é o movimento ordenado de partículas carregadas (elétrons) em um circuito elétrico. Sua unidade de medida é o Ampère (A).
+        </div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="question-card">
+        <div class="question-text">6. De acordo com a Lei de Ohm, a corrente elétrica que flui por um circuito é inversamente proporcional à voltagem, sendo calculada dividindo-se a resistência elétrica pela voltagem (I = R ÷ V).</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q6" value="V" onchange="showResolution('res6')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q6" value="F" onchange="showResolution('res6')"> Falso (F)</label>
+        </div>
+        <div id="res6" class="resolution">
+            <strong>Resposta correta: Falso.</strong><br>
+            A Lei de Ohm estabelece que a corrente elétrica em um circuito é igual à voltagem (tensão) aplicada dividida pela resistência elétrica, e não o contrário. A fórmula correta, expressa de diferentes maneiras, mostra que Resistência = Voltagem / Corrente, ou I = V / R.
+        </div>
+    </div>
+
+    <!-- Questão 7 -->
+    <div class="question-card">
+        <div class="question-text">7. A energia cinética, também chamada de energia mecânica, está diretamente associada ao movimento dos corpos, como por exemplo o vento girando as pás de uma turbina eólica.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q7" value="V" onchange="showResolution('res7')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q7" value="F" onchange="showResolution('res7')"> Falso (F)</label>
+        </div>
+        <div id="res7" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            A energia produzida através do movimento é chamada de cinética ou mecânica. Todo objeto em movimento possui energia cinética, o que pode ser visto em turbinas eólicas ou na água caindo em usinas hidrelétricas para posteriormente gerar eletricidade.
+        </div>
+    </div>
+
+    <!-- Questão 8 -->
+    <div class="question-card">
+        <div class="question-text">8. Quando ligamos um chuveiro elétrico na nossa casa, ocorre primariamente a transformação de energia química em energia eletromagnética sonora.</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q8" value="V" onchange="showResolution('res8')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q8" value="F" onchange="showResolution('res8')"> Falso (F)</label>
+        </div>
+        <div id="res8" class="resolution">
+            <strong>Resposta correta: Falso.</strong><br>
+            No funcionamento de um chuveiro elétrico, não há conversão de energia química em sonora. O processo verdadeiro é a transformação da energia elétrica para térmica (aquecimento da água) graças à resistência elétrica presente no equipamento.
+        </div>
+    </div>
+
+    <!-- Questão 9 -->
+    <div class="question-card">
+        <div class="question-text">9. Em um circuito elétrico classificado como "misto", podemos observar tanto partes ligadas em série (onde a corrente tem um caminho único) quanto partes ligadas em paralelo (onde a corrente se divide em ramos).</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q9" value="V" onchange="showResolution('res9')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q9" value="F" onchange="showResolution('res9')"> Falso (F)</label>
+        </div>
+        <div id="res9" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            Um circuito é considerado misto exatamente porque ele combina os dois modelos. Parte dos elementos está ligada em série (recebendo a mesma corrente) e outra parte está associada em paralelo, dividindo o fluxo de elétrons em ramos diferentes.
+        </div>
+    </div>
+
+    <!-- Questão 10 -->
+    <div class="question-card">
+        <div class="question-text">10. A Potência Elétrica de um aparelho, cuja unidade de medida é o Watt (W), indica a taxa de transferência de energia e pode ser calculada multiplicando-se a corrente (A) pela tensão (V).</div>
+        <div class="options">
+            <label class="radio-label"><input type="radio" name="q10" value="V" onchange="showResolution('res10')"> Verdadeiro (V)</label>
+            <label class="radio-label"><input type="radio" name="q10" value="F" onchange="showResolution('res10')"> Falso (F)</label>
+        </div>
+        <div id="res10" class="resolution">
+            <strong>Resposta correta: Verdadeiro.</strong><br>
+            A potência elétrica é a taxa de transferência de energia de um sistema e é medida em Watts (W). A fórmula clássica para descobrir a potência em um circuito é P = i · U (ou P = V × I), ou seja, multiplicando a corrente elétrica pela voltagem (tensão).
+        </div>
+    </div>
+
+    <script>
+        function showResolution(id) {
+            var element = document.getElementById(id);
+            // Ao clicar em V ou F, exibe a resolução correspondente dinamicamente
+            element.style.display = "block";
+        }
+    </script>
+</body>
+</html>
