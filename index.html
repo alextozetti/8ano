@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulados - 8º Ano (AP1)</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --text-color: #1f2937;
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --card-border: rgba(255, 255, 255, 0.4);
+            --accent-ciencias: #10b981;
+            --accent-geografia: #f59e0b;
+            --accent-historia: #8b5cf6;
+            --accent-matematica: #3b82f6;
+            --accent-portugues: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05em;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #4b5563;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+        }
+
+        .card.ciencias::before { background: var(--accent-ciencias); }
+        .card.geografia::before { background: var(--accent-geografia); }
+        .card.historia::before { background: var(--accent-historia); }
+        .card.matematica::before { background: var(--accent-matematica); }
+        .card.portugues::before { background: var(--accent-portugues); }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .card.ciencias .card-title { color: var(--accent-ciencias); }
+        .card.geografia .card-title { color: var(--accent-geografia); }
+        .card.historia .card-title { color: var(--accent-historia); }
+        .card.matematica .card-title { color: var(--accent-matematica); }
+        .card.portugues .card-title { color: var(--accent-portugues); }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            flex-grow: 1;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 0.875rem 1rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 0.75rem;
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .link-item:hover {
+            background: #ffffff;
+            border-color: #d1d5db;
+            color: #111827;
+            transform: translateX(4px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .link-item::before {
+            content: '→';
+            margin-right: 0.75rem;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.2s ease;
+            color: #6b7280;
+        }
+
+        .link-item:hover::before {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        footer {
+            margin-top: auto;
+            padding-top: 4rem;
+            color: #9ca3af;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 640px) {
+            h1 { font-size: 2.2rem; }
+            .container { grid-template-columns: 1fr; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Simulados - 8º Ano</h1>
+        <p class="subtitle">Avaliação Periódica 1 (AP1)</p>
+    </header>
+
+    <div class="container">
+        <!-- Ciências -->
+        <div class="card ciencias">
+            <h2 class="card-title">
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                Ciências
+            </h2>
+            <div class="links">
+                <a href="ciencias-2.html" class="link-item">Simulado 2</a>
+                <a href="ciencias-3.html" class="link-item">Simulado 3</a>
+            </div>
+        </div>
+
+        <!-- Geografia -->
+        <div class="card geografia">
+            <h2 class="card-title">
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Geografia
+            </h2>
+            <div class="links">
+                <a href="geografia-2.html" class="link-item">Simulado 2</a>
+                <a href="geografia-3.html" class="link-item">Simulado 3</a>
+            </div>
+        </div>
+
+        <!-- História -->
+        <div class="card historia">
+            <h2 class="card-title">
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                História
+            </h2>
+            <div class="links">
+                <a href="historia-1.html" class="link-item">Simulado 1</a>
+                <a href="historia-2.html" class="link-item">Simulado 2</a>
+                <a href="historia-3.html" class="link-item">Simulado 3</a>
+            </div>
+        </div>
+
+        <!-- Matemática -->
+        <div class="card matematica">
+            <h2 class="card-title">
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                Matemática
+            </h2>
+            <div class="links">
+                <a href="mat-1.html" class="link-item">Simulado 1</a>
+                <a href="matematica-2.html" class="link-item">Simulado 2</a>
+                <a href="matematica-3.html" class="link-item">Simulado 3</a>
+            </div>
+        </div>
+
+        <!-- Português -->
+        <div class="card portugues">
+            <h2 class="card-title">
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                Português
+            </h2>
+            <div class="links">
+                <a href="port-1.html" class="link-item">Simulado 1</a>
+                <a href="portugues-2.html" class="link-item">Simulado 2</a>
+                <a href="portugues-3.html" class="link-item">Simulado 3</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Simulados 8º Ano
+    </footer>
+
+</body>
+</html>
